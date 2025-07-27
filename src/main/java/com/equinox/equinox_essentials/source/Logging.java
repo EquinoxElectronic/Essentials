@@ -2,8 +2,8 @@ package com.equinox.equinox_essentials.source;
 
 public class Logging {
     private static final int BAR_WIDTH = 50;
-    private static final char PROGRESS_CHAR = '█';
-    private static final char EMPTY_CHAR = '░';
+    private static final char PROGRESS_CHAR = '━';
+    private static final char EMPTY_CHAR = ' ';
     public static final String ANSI_BLUE = "\u001B[36m";
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_GREEN = "\u001B[32m";
@@ -11,7 +11,7 @@ public class Logging {
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_WHITE = "\u001B[37m";
 
-    public void createProgressBar(String title, int total) {
+    public void createProgressBar(String title, int total, String message) {
         if (total <= 0) {
             throw new IllegalArgumentException("Total must be greater than 0");
         }
@@ -19,10 +19,10 @@ public class Logging {
         for (int i = 0; i < BAR_WIDTH; i++) {
             System.out.print(EMPTY_CHAR);
         }
-        System.out.print("] 0%");
+        System.out.print("] 0%, "+message);
     }
 
-    public void updateProgressBar(int current, int total) {
+    public void updateProgressBar(int current, int total, String message) {
         if (current < 0 || total <= 0 || current > total) {
             throw new IllegalArgumentException("Invalid progress values");
         }
@@ -30,16 +30,25 @@ public class Logging {
         int percentage = (int) ((double) current / total * 100);
         int progressWidth = (int) ((double) current / total * BAR_WIDTH);
 
-        StringBuilder bar = new StringBuilder("\r[");
+        StringBuilder bar = new StringBuilder("\r["+ANSI_BLUE);
         for (int i = 0; i < BAR_WIDTH; i++) {
             bar.append(i < progressWidth ? PROGRESS_CHAR : EMPTY_CHAR);
         }
-        bar.append(String.format("] %d%%", percentage));
+        bar.append(String.format(ANSI_WHITE+"] %d%%", percentage));
+        bar.append(", ").append(message);
 
         System.out.print(bar);
         if (current == total) {
             System.out.println();
         }
+    }
+
+    public void createProgressBar(String title, int total) {
+        createProgressBar(title, total, "Loading...");
+    }
+
+    public void updateProgressBar(int current, int total) {
+        updateProgressBar(current, total, "Loading...");
     }
 
     public void logString(String string) {
