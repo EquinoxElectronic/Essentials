@@ -1,6 +1,6 @@
 package io.github.equinoxelectronic.equinox_essentials;
 
-import com.equinox.equinox_essentials.source.*;
+import io.github.equinoxelectronic.equinox_essentials.source.*;
 import io.github.equinoxelectronic.equinox_essentials.source.*;
 import io.github.equinoxelectronic.equinox_essentials.source.Math;
 

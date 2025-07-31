@@ -15,8 +15,8 @@
 
     <licenses>
         <license>
-            <name>Apache 2.0</name>
-            <url>https://opensource.org/licenses/MIT</url>
+            <name>Apache License 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -30,10 +30,10 @@
     </developers>
 
     <scm>
-        <url>https://github.com/equinoxelectronic/EquinoxEssentials</url>
-        <connection>scm:git:git://github.com/equinoxelectronic/EquinoxEssentials.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/equinoxelectronic/EquinoxEssentials.git</developerConnection>
-        <tag>v1.0</tag> <!-- ← Tag used when publishing on JitPack -->
+        <url>https://github.com/EquinoxElectronic/Essentials</url>
+        <connection>scm:git:git://github.com/EquinoxElectronic/Essentials.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/EquinoxElectronic/Essentials.git</developerConnection>
+        <tag>v1.0</tag>
     </scm>
 
     <properties>
