@@ -1,4 +1,4 @@
-package com.equinox.equinox_essentials.source;
+package io.github.equinoxelectronic.equinox_essentials.source;
 
 public class Constants {
     public final double GOLDEN_RATIO = 1.618033988749895;

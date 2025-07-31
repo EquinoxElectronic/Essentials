@@ -1,4 +1,4 @@
-import com.equinox.equinox_essentials.Essentials;
+import io.github.equinoxelectronic.equinox_essentials.Essentials;
 
 public class Test {
     public static void main(String[] args) {

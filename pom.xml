@@ -1,12 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>equinox</groupId>
+    <!-- Your GitHub-compatible groupId -->
+    <groupId>io.github.equinoxelectronic</groupId>
     <artifactId>EquinoxEssentials</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
+
+    <name>EquinoxEssentials</name>
+    <description>Lightweight Java utility library by Equinox Electronic</description>
+    <url>https://github.com/EquinoxElectronic/Essentials</url>
+
+    <licenses>
+        <license>
+            <name>Apache 2.0</name>
+            <url>https://opensource.org/licenses/MIT</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>equinoxelectronic</id>
+            <name>Equinox Electronic</name>
+            <email>djdurairaj@yahoo.com</email> <!-- ← Put your dev email or leave blank -->
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/equinoxelectronic/EquinoxEssentials</url>
+        <connection>scm:git:git://github.com/equinoxelectronic/EquinoxEssentials.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/equinoxelectronic/EquinoxEssentials.git</developerConnection>
+        <tag>v1.0</tag> <!-- ← Tag used when publishing on JitPack -->
+    </scm>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -21,5 +49,4 @@
             <version>2.10.1</version>
         </dependency>
     </dependencies>
-
 </project>

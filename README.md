@@ -81,9 +81,9 @@ Equinox Essentials is a one-stop utility library for Java developers. It elimina
 Example:
 
 ```java
-    import com.equinox.equinox_essentials.source.Checker;
 
-    boolean isEmail = Essentials.checker.isValidEmail(email);
+
+boolean isEmail = Essentials.checker.isValidEmail(email);
 ```
 
 ---

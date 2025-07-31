@@ -1,4 +1,4 @@
-package com.equinox.equinox_essentials.source;
+package io.github.equinoxelectronic.equinox_essentials.source;
 
 public class Math {
     public double clampNum(double x, double y, double input) {

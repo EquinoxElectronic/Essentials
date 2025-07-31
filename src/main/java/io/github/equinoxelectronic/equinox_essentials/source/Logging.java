@@ -1,4 +1,4 @@
-package com.equinox.equinox_essentials.source;
+package io.github.equinoxelectronic.equinox_essentials.source;
 
 public class Logging {
     private static final int BAR_WIDTH = 50;

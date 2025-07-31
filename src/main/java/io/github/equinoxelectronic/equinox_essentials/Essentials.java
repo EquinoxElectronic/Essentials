@@ -1,10 +1,11 @@
-package com.equinox.equinox_essentials;
+package io.github.equinoxelectronic.equinox_essentials;
 
 import com.equinox.equinox_essentials.source.*;
-import com.equinox.equinox_essentials.source.Math;
+import io.github.equinoxelectronic.equinox_essentials.source.*;
+import io.github.equinoxelectronic.equinox_essentials.source.Math;
 
 public class Essentials {
-    public static  Checker checker = new Checker();
+    public static Checker checker = new Checker();
     public static Constants constants = new Constants();
     public static Convert convert = new Convert();
     public static Generators generator = new Generators();
